@@ -1,3 +1,5 @@
+export { TarjetaCredito, pay, TarjetaCredito, credit, owner}
+
 var owner = "";
 var number = "";
 var credit = 3000;
