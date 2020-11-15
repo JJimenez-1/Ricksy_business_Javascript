@@ -1,4 +1,6 @@
-     /**
+import { pay, credit, number} from "./TarjetaCredito";  
+import { add, UfosPark, disaptch, getUfoOf}  from "./UfosPark";
+    /**
     * Crea una tarjeta de crédito para Abradolph.
     * Como es una AndromedanExpress
     * el crédito inicial es de 3000 EZIS
