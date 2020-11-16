@@ -1,4 +1,3 @@
-
 export { TarjetaCredito, pay, TarjetaCredito, credit, owner};
 
 var owner = "";

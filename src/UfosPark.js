@@ -1,5 +1,5 @@
-import { pay, credit, number} from "./TarjetaCredito";
-export {UfosPark, add, dispatch, getUfoOf, flota };
+//import { pay, credit, number} from "./TarjetaCredito";
+export {UfosPark};
 
 const fee = 500;
 var flota = new Map();
