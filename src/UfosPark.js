@@ -1,10 +1,12 @@
 //import { pay, credit, number} from "./TarjetaCredito";
 export {UfosPark};
 
+
 const fee = 500;
 var flota = new Map();
 
-function UfosPark() {}
+function UfosPark() {
+}
 
 function add(ufo) {
     flota.set(ufo, null);
@@ -28,4 +30,8 @@ function getUfoOf(cardNumber) {
         }
       }
       return nombreOvni;
+}
+
+exports.singletonUfosPark = function() {
+  return dispatch();
 }

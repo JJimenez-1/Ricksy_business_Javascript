@@ -1,13 +1,9 @@
-export { TarjetaCredito, pay, TarjetaCredito, credit, owner};
 
-var owner = "";
-var number = "";
-var credit = 3000;
-var symbol = "EZI";
-
-function TarjetaCredito(owner, number){
+export default function TarjetaCredito(owner, number){
     this.owner = owner;
     this.number = number;
+    this.credit = 3000;
+    this.symbol = "EZI";
 }
 
 function pay(charge) {

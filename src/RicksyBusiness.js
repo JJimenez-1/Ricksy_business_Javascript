@@ -1,19 +1,24 @@
 //import { pay, credit, number} from "./TarjetaCredito";  
-import {UfosPark}  from "./UfosPark";
+import TarjetaCredito from "./TarjetaCredito.js"
+
     /**
     * Crea una tarjeta de crédito para Abradolph.
     * Como es una AndromedanExpress
     * el crédito inicial es de 3000 EZIS
     */
 
-    var ufos= new UfosPark();
-
-    console.log(ufos.flota);
+    var abradolph = new TarjetaCredito("Abradolp Lincler", "49412375T")
+   
 
     console.log("\n" + "Tarjeta de Abradolph" + "\n" + 
                               "===================="        );
-    console.log(abradolph);
+    
+    console.log(abradolph.owner + " " + abradolph.number);
 
+    /*
+    var ufos= new UfosPark();
+
+    console.log(ufos.flota);
     // Da de alta en la flota de ovnis 2 UFOS.
         
     // Procesamos el pago y reserva de ovni de Abradolph
@@ -71,12 +76,6 @@ import {UfosPark}  from "./UfosPark";
                         "==============");
     console.log(ufosPark);
 
-    /**
-    * Construye el dispensador de packs de bienvenida.
-    * Indica el numero de unidades y el coste de cada
-    * uno de ellos, que es de 50 EZIs
-    */
-
     // Muestra el total de packs y su precio unidad
     console.log("\nPacks\n" + 
                         "=====");
@@ -94,23 +93,6 @@ import {UfosPark}  from "./UfosPark";
                         "=================================");
     console.log("Packs\n" + packExpender);
     console.log("Credito de GearHead: " + gearHead.credit());
-
-
-    /**
-    * Vamos a automatizar ahora ambas tareas, de modo que
-    * cuando llega un invitado/a se le asiga un ovni
-    * y un pack y se realiza el cargo a la tarjeta.
-    * 
-    * Para ello, crea el componente receptivo
-    * y registra (añade) los componentes UfosPark
-    * y CrystalDispatcher al receptivo
-    */
-
-
-
-    // Implementa el metodo receptivo.dispatch()
-    // para que invoque a UfosPark.dispatch()
-    // y a CrystalExpender.dispatch()
 
     // Squanchy reserva ovni (ya tiene) y pack
 
@@ -149,3 +131,4 @@ import {UfosPark}  from "./UfosPark";
     console.log(card);
     console.log("Packs: " + expender.stock());
     console.log("Ovni: " + ufos.getUfoOf(card.number()));
+*/
