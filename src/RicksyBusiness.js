@@ -1,5 +1,5 @@
 //import { pay, credit, number} from "./TarjetaCredito";  
-import TarjetaCredito from "./TarjetaCredito.js"
+var tarjetaCredito =  require("./TarjetaCredito.js");
 
     /**
     * Crea una tarjeta de crédito para Abradolph.
@@ -7,7 +7,7 @@ import TarjetaCredito from "./TarjetaCredito.js"
     * el crédito inicial es de 3000 EZIS
     */
 
-    var abradolph = new TarjetaCredito("Abradolp Lincler", "49412375T")
+    var abradolph = new tarjetaCredito("Abradolp Lincler", "49412375T")
    
 
     console.log("\n" + "Tarjeta de Abradolph" + "\n" + 

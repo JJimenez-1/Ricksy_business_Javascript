@@ -1,5 +1,5 @@
 
-export default function TarjetaCredito(owner, number){
+function TarjetaCredito(owner, number){
     this.owner = owner;
     this.number = number;
     this.credit = 3000;
@@ -15,3 +15,5 @@ function pay(charge) {
         return false;
     }
 }
+
+module.exports = TarjetaCredito;
