@@ -1,4 +1,3 @@
-
 function UfosPark() {
   this.fee = 500;
   this.flota = new Map();

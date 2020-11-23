@@ -1,4 +1,3 @@
-
 function TarjetaCredito(owner, number){
     this.owner = owner;
     this.number = number;

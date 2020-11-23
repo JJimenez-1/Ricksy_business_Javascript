@@ -1,5 +1,5 @@
-const singletonUfosPark = require("../UfosPark.js");
-const TarjetaCredito = require("../TarjetaCredito.js");
+const singletonUfosPark = require("../src/UfosPark.js");
+const TarjetaCredito = require("../src/TarjetaCredito.js");
 const { test, expect } = require("@jest/globals");
 
 beforeEach(() => {
@@ -18,6 +18,7 @@ test("Añadir 3 ufos al UfosPark", () => {
   let ufos = ["Ufo1", "Ufo2", "Ufo3"];
   let actualFlota = new Map();
   for (let position in ufos) {
+      
     actualFlota.set(ufos[position], null);
     ufosPark.add(ufos[position]);
   }

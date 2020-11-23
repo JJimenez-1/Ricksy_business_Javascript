@@ -1,5 +1,5 @@
 const { test, expect } = require("@jest/globals");
-const TarjetaCredito = require("../TarjetaCredito.js");
+const TarjetaCredito = require("../src/TarjetaCredito.js");
 
 
 beforeEach(() => {
