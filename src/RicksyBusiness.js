@@ -15,6 +15,13 @@ var tarjetaCredito =  require("./TarjetaCredito.js");
     
     console.log(abradolph.owner + " " + abradolph.number);
 
+    abradolph.pay(1000);
+
+    console.log("\n" + "Quitar 1000 creditos a abradolph" + "\n" + 
+    "====================" )
+
+    console.log(abradolph.credit);
+
     /*
     var ufos= new UfosPark();
 
