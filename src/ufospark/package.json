@@ -1,0 +1,17 @@
+{
+  "name": "ufospark",
+  "version": "1.0.0",
+  "description": "Paquete para UfosPark",
+  "main": "UfosPark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "git",
+    "package",
+    "test"
+  ],
+  "author": "José Jiménez Beltrán",
+  "license": "MIT"
+}

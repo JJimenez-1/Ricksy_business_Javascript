@@ -1,5 +1,5 @@
 //import { pay, credit, number} from "./TarjetaCredito";  
-var tarjetaCredito =  require("./TarjetaCredito.js");
+var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
 
     /**
     * Crea una tarjeta de crédito para Abradolph.

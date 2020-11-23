@@ -1,5 +1,5 @@
-const singletonUfosPark = require("../src/UfosPark.js");
-const TarjetaCredito = require("../src/TarjetaCredito.js");
+const singletonUfosPark = require("../src/ufospark/UfosPark.js");
+const TarjetaCredito = require("../src/tarjetacredito/TarjetaCredito.js");
 const { test, expect } = require("@jest/globals");
 
 beforeEach(() => {
