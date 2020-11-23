@@ -1,37 +1,45 @@
-//import { pay, credit, number} from "./TarjetaCredito";
-export {UfosPark};
-
-
-const fee = 500;
-var flota = new Map();
 
 function UfosPark() {
+  this.fee = 500;
+  this.flota = new Map();
 }
 
-function add(ufo) {
-    flota.set(ufo, null);
+UfosPark.prototype.add = function(ufo) {
+    this.flota.set(ufo, null);
   }
 
-function dispatch(card) {
-    for(let key of flota.entries()) {
-        if(key.keys() == null && card.number) {
-            card.pay(valueUfo);
-            flota.set(key.keys(), card.getterNumber)
+UfosPark.prototype.getUfoOf = function(cardNumber) {
+  for (let [ufo, owner] of this.flota.entries()) {
+    if (cardNumber == owner) {
+        return ufo;
+      }
+    }
+    return "Imposible encontrar ovni";
+}
+
+UfosPark.prototype.dispatch = function(card) {
+    for(let [ufo, owner] of this.flota.entries()) {
+        if(owner == null && card.credit >= this.fee) {
+            card.pay(this.fee);
+            this.flota.set(ufo, card.number);
+            break;
         }
     }
 }
 
-function getUfoOf(cardNumber) {
-    let nameOvni = "";
-
-    for (let key of flota.entries()) {
-        if (key.values() == owner) {
-          nameOvni = key.keys();
-        }
+const singletonUfosPark = (function() {
+  var instance;
+  function createInstance() {
+    return new UfosPark()
+  }
+  return {
+    getPark: function() {
+      if(!instance) {
+        instance = createInstance();
       }
-      return nombreOvni;
-}
+      return instance;
+    },
+  };
+})();
 
-exports.singletonUfosPark = function() {
-  return dispatch();
-}
+module.exports = singletonUfosPark;
