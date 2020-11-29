@@ -1,5 +1,6 @@
 //import { pay, credit, number} from "./TarjetaCredito";  
 var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
+var singletonUfosPark =  require("./ufospark/UfosPark.js");
 
     /**
     * Crea una tarjeta de crédito para Abradolph.
@@ -7,7 +8,7 @@ var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
     * el crédito inicial es de 3000 EZIS
     */
 
-    var abradolph = new tarjetaCredito("Abradolp Lincler", "49412375T")
+    let abradolph = new tarjetaCredito("Abradolph Lincler", "49412375T")
    
 
     console.log("\n" + "Tarjeta de Abradolph" + "\n" + 
@@ -22,6 +23,25 @@ var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
 
     console.log(abradolph.credit);
 
+    let ufosPark = singletonUfosPark.getPark();
+
+    ufosPark.add("unx");
+    ufosPark.add("dox");
+
+    ufosPark.dispatch(abradolph);
+
+    console.log("\nOvni de Abradolph\n" + 
+    "=================");
+
+    console.log("Credito de Abradolph: " + abradolph.credit);
+
+    console.log("\nAbradolph quiere otro ovni\n" + 
+    "==========================");
+    ufosPark.dispatch(abradolph);
+    console.log("Su credito no ha cambiado: " + abradolph.credit);
+    console.log("Ovni de Abradolph: " + ufosPark.getUfoOf(abradolph.number));
+
+    console.log(ufosPark);
     /*
     var ufos= new UfosPark();
 
