@@ -28,3 +28,10 @@ test('Rick no puede pagar', () => {
     paquete.dispatch(rick);
     expect(paquete.stock).toBe(10)
 });
+
+test('Pagar 10 crystal', () => {
+    for (let i = 0; i < 11; i++) {
+        paquete.dispatch(rick);
+    }
+    expect(rick.credit).toBe(2500);
+});
