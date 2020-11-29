@@ -1,4 +1,5 @@
 //import { pay, credit, number} from "./TarjetaCredito";  
+const CrystalExpender = require("./crystalexpender/CrystalExpender.js");
 var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
 var singletonUfosPark =  require("./ufospark/UfosPark.js");
 
@@ -66,6 +67,29 @@ var singletonUfosPark =  require("./ufospark/UfosPark.js");
     console.log("Su credito no ha cambiado: " + morty.credit);
     console.log("No hay ovni Morty: " + ufosPark.getUfoOf(morty.number));
 
+    console.log("\nFlota de ovnis\n" + 
+    "==============");
+    ufosPark.add("trex");
+    console.log(ufosPark);
+
+    let packExpender = new CrystalExpender(3, 50);
+
+    console.log("\nPacks\n" + 
+    "=====");
+    console.log(packExpender);
+
+    packExpender.dispatch(abradolph);
+
+    console.log("\nAbradolph compra su pack\n" + 
+    "========================");
+    console.log("Packs\n" + packExpender);
+    console.log("Credito de Abradolph: " + abradolph.credit);
+
+    console.log("\nGearHead sin credito para su pack\n" + 
+    "=================================");
+    packExpender.dispatch(gearHead);
+    console.log("Packs\n" + packExpender);
+    console.log("Credito de GearHead: " + gearHead.credit);
     /*
     var ufos= new UfosPark();
 
