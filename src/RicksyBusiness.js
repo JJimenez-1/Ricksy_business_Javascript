@@ -51,13 +51,13 @@ var singletonUfosPark =  require("./ufospark/UfosPark.js");
     console.log("Su credito es cero: " + gearHead.credit);
     console.log("No puede reservar ovni: " + ufosPark.getUfoOf(gearHead.number));
 
-    /*
+    
     console.log("\nLLega Squanchy!\n" + 
     "==============");
     let squanchy = new tarjetaCredito("Squanchy", "4444444444444444");
     ufosPark.dispatch(squanchy);
     console.log("Su credito es: " + squanchy.credit);
-    console.log("Su ovni es: " + ufosPark.getUfoOf(squanchy.number)); */
+    console.log("Su ovni es: " + ufosPark.getUfoOf(squanchy.number)); 
     /*
     var ufos= new UfosPark();
 
