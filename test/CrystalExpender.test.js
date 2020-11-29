@@ -4,10 +4,14 @@ const { test, expect } = require('@jest/globals');
 
 beforeEach(() => {
     rick = new CreditCard("Rick", 46578912);
+    paquete = new CrystalExpender(10, 50);
+});
+
+test('Comprobar paquete no es null', () => {
+    expect(paquete).not.toBeNull();
 });
 
 test('Pagar 1 paquete', () => {
-    paquete = new CrystalExpender(10, 50);
     paquete.dispatch(rick);
     expect(rick.credit).toBe(2950);
 });
