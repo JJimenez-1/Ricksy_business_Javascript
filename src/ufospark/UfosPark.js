@@ -17,6 +17,7 @@ UfosPark.prototype.getUfoOf = function(cardNumber) {
 }
 
 UfosPark.prototype.dispatch = function(card) {
+  
     for(let [ufo, owner] of this.flota.entries()) {
         if(owner == null && card.credit >= this.fee) {
             card.pay(this.fee);

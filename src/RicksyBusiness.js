@@ -58,6 +58,14 @@ var singletonUfosPark =  require("./ufospark/UfosPark.js");
     ufosPark.dispatch(squanchy);
     console.log("Su credito es: " + squanchy.credit);
     console.log("Su ovni es: " + ufosPark.getUfoOf(squanchy.number)); 
+
+    console.log("\nAlgun ovni para Morty?\n" + 
+    "======================");
+    let morty = new tarjetaCredito("Mort", "0000000000000000");
+    ufosPark.dispatch(morty);
+    console.log("Su credito no ha cambiado: " + morty.credit);
+    console.log("No hay ovni Morty: " + ufosPark.getUfoOf(morty.number));
+
     /*
     var ufos= new UfosPark();
 
