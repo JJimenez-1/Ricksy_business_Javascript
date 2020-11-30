@@ -1,0 +1,17 @@
+{
+  "name": "receptivo",
+  "version": "1.0.0",
+  "description": "Paquete para Receptivo",
+  "main": "Receptivo.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "javascript",
+    "git",
+    "package",
+    "test"
+  ],
+  "author": "Jose Jimenez Beltran",
+  "license": "MIT"
+}
