@@ -4,7 +4,7 @@
   "description": "Paquete para UfosPark",
   "main": "UfosPark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "javascript",
@@ -13,5 +13,8 @@
     "test"
   ],
   "author": "José Jiménez Beltrán",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
