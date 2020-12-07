@@ -1,0 +1,17 @@
+{
+  "name": "crystalexpender",
+  "version": "1.0.0",
+  "description": "javascript, git, package, test",
+  "main": "CrystalExpender.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "javascript",
+    "git",
+    "package",
+    "test"
+  ],
+  "author": "Jose Jimenez Beltran",
+  "license": "MIT"
+}

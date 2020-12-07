@@ -19,7 +19,7 @@ UfosPark.prototype.getUfoOf = function(cardNumber) {
 UfosPark.prototype.dispatch = function(card) {
   
     for(let [ufo, owner] of this.flota.entries()) {
-        if(owner == null && card.credit >= this.fee) {
+        if(owner == null && card.credit >= this.fee  && !Array.from(this.flota.values()).includes(card.number, 0)) {
             card.pay(this.fee);
             this.flota.set(ufo, card.number);
             break;

@@ -39,3 +39,11 @@ test("Dispatch 3 ufos", () => {
   ufosPark.dispatch(morty);
   expect(ufosPark.flota).toMatchInlineSnapshot(actualFlota, `Object {}`);
 });
+
+/**
+ * const Mock = jest.fn().mockImplementation( () => Objecct.crate (meeseeks)).mockName('boxMock');
+ * box.pressButton = boxMock;
+ * 
+ * 
+ * 
+ */
