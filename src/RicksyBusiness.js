@@ -4,6 +4,7 @@ var tarjetaCredito =  require("./tarjetacredito/TarjetaCredito.js");
 var singletonUfosPark =  require("./ufospark/UfosPark.js");
 var singletonReceptivo = require("./receptivo/Receptivo.js");
 const RickMenu = require("./rickmenu/rickmenu.js");
+const crystalJson = require("./data/Crystal.json");
 
     /**
     * Crea una tarjeta de crédito para Abradolph.
@@ -74,7 +75,13 @@ const RickMenu = require("./rickmenu/rickmenu.js");
     ufosPark.add("trex");
     console.log(ufosPark);
 
-    let packExpender = new CrystalExpender(3, 50);
+    let firstParamCrystal;
+    for(let crystal of crystalJson) {
+        firstParamCrystal = crystal;
+        break;
+    }
+
+    let packExpender = new CrystalExpender(firstParamCrystal.stock, firstParamCrystal.precio);
 
     console.log("\nPacks\n" + 
     "=====");
