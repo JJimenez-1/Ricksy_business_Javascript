@@ -1,7 +1,7 @@
-function RickMenu() {
+function RickMenu(stock, cost) {
 
-    this.stock = 100
-    this.cost = 10;
+    this.stock = stock;
+    this.cost = cost;
 }
 
 RickMenu.prototype.dispatch = function (owner) {

@@ -4,7 +4,7 @@ const { test, expect } = require('@jest/globals');
 
 beforeEach(() => {
     morty = new CreditCard("Morty", 46578912);
-    menu = new RickMenu();
+    menu = new RickMenu(100, 10);
 });
 
 test('Comprobar menu no es null', () => {
