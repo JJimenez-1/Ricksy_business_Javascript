@@ -1,7 +1,7 @@
-const CreditCard = require("../src/tarjetacredito/TarjetaCredito.js");
-const CrystalExpender = require("../src/crystalexpender/CrystalExpender.js");
-const UfosPark = require("../src/ufospark/UfosPark.js");
-const Receptivo = require("../src/receptivo/Receptivo.js");
+const CreditCard = require("../../tarjetacredito/TarjetaCredito.js");
+const CrystalExpender = require("../../crystalexpender/CrystalExpender.js");
+const UfosPark = require("../../ufospark/UfosPark.js");
+const Receptivo = require("../Receptivo.js");
 
 beforeEach(() => {
     abradolph = new CreditCard("Abradolph", 49412375);

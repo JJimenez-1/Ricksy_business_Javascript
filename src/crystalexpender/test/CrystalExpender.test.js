@@ -1,5 +1,5 @@
-const CreditCard = require('../src/tarjetacredito/TarjetaCredito.js');
-const CrystalExpender = require('../src/crystalexpender/CrystalExpender.js');
+const CreditCard = require('../../tarjetacredito/TarjetaCredito.js');
+const CrystalExpender = require('../CrystalExpender.js');
 const { test, expect } = require('@jest/globals');
 
 beforeEach(() => {
