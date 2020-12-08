@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "RicskyBusiness.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "application": "node RicksyBusiness.js"
   },
   "dependencies": {},
   "devDependencies": {
