@@ -5,6 +5,7 @@ var singletonUfosPark =  require("./ufospark/UfosPark.js");
 var singletonReceptivo = require("./receptivo/Receptivo.js");
 const RickMenu = require("./rickmenu/rickmenu.js");
 const crystalJson = require("./data/Crystal.json");
+const rickmenuJson = require("./data/menus.json").España.menu1;
 
     /**
     * Crea una tarjeta de crédito para Abradolph.
@@ -120,7 +121,7 @@ const crystalJson = require("./data/Crystal.json");
     receptivo.dispatch(morty);
     mostrarReserva(morty, packExpender, ufosPark);
 
-    let MenuDispatcher = new RickMenu();
+    let MenuDispatcher = new RickMenu(rickmenuJson.stck, rickmenuJson.price);
     receptivo.registra(MenuDispatcher);
 
     let cards = [abradolph, squanchy, morty, gearHead, birdpearson];
