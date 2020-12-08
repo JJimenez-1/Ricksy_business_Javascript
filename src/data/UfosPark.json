@@ -1,0 +1,159 @@
+{
+    "ufos": [
+        {
+            "modelo": "Crucero de Alderaan",
+            "marca": "Rebelión",
+            "gama": "Alta",
+            "tasa": 50,
+            "color": "Blanco",
+            "plazas": 20,
+            "caracteristicas": [
+                "Escudos",
+                "Turbo laser",
+                "Hipervelocidad",
+                "Puerto",
+                "Puente de mando"
+            ]
+        },
+        {
+            "modelo": "T-70 X-Wing",
+            "marca": "Resistencia",
+            "gama": "Baja",
+            "tasa": 15,
+            "color": "Gris",
+            "plazas": 2,
+            "caracteristicas": [
+                "Hipervelocidad",
+                "Patas extensibles",
+                "Cabina"
+            ]
+        },
+        {
+            "modelo": "V-Wing",
+            "marca": "República",
+            "gama": "Baja",
+            "tasa": 15,
+            "color": "Blanco",
+            "plazas": 1,
+            "caracteristicas": [
+                "Torpedos",
+                "Cabina",
+                "Hipervelocidad"
+            ]
+        },
+        {
+            "modelo": "Y-Wing",
+            "marca": "República",
+            "gama": "Baja",
+            "tasa": 15,
+            "color": "Blanco",
+            "plazas": 2,
+            "caracteristicas": [
+                "Torpedos",
+                "Hipervelocidad",
+                "Cabina"
+            ]
+        },
+        {
+            "modelo": "Magna Guard Fighter",
+            "marca": "CSI",
+            "gama": "Media",
+            "tasa": 25,
+            "color": "Gris Oscuro",
+            "plazas": 2,
+            "caracteristicas": [
+                "Cañones de iones",
+                "Escudos",
+                "Cabina"
+            ]
+        },
+        {
+            "modelo": "Neimoidian Escort Shuttle",
+            "marca": "CSI",
+            "gama": "Media",
+            "tasa": 25,
+            "color": "Gris",
+            "plazas": 4,
+            "caracteristicas": [
+                "Escudos",
+                "Hipervelocidad",
+                "Patas extensibles",
+                "Puente de mando"
+            ]
+        },
+        {
+            "modelo": "Cañonera de la República",
+            "marca": "República",
+            "gama": "Media",
+            "tasa": 25,
+            "color": "Blanco",
+            "plazas": 6,
+            "caracteristicas": [
+                "Cañones de iones",
+                "Misileros",
+                "Cabina",
+                "Camara de carga"
+            ]
+        },
+        {
+            "modelo": "Twilight",
+            "marca": "CSI",
+            "gama": "Media",
+            "tasa": 25,
+            "color": "Gris",
+            "plazas": 5,
+            "caracteristicas": [
+                "Cañones de iones",
+                "Escudos",
+                "Hipervelocidad",
+                "Patas extensibles",
+                "Camara de carga"
+            ]
+        },
+        {
+            "modelo": "AA-9",
+            "marca": "República",
+            "gama": "Media",
+            "tasa": 25,
+            "color": "Marrón",
+            "plazas": 30,
+            "caracteristicas": [
+                "Escudos",
+                "Hipervelocidad",
+                "Puente de mando",
+                "Camara de carga"
+            ]
+        },
+        {
+            "modelo": "GR-75",
+            "marca": "Rebelión",
+            "gama": "Alta",
+            "tasa": 50,
+            "color": "Blanco",
+            "plazas": 8,
+            "caracteristicas": [
+                "Turbo laser",
+                "Escudos",
+                "Hipervelocidad",
+                "Puente de mando",
+                "Camara de carga",
+                "Puerto"
+            ]
+        },
+        {
+            "modelo": "Imperial Shuttle",
+            "marca": "Imperio Galáctico",
+            "gama": "Alta",
+            "tasa": 50,
+            "color": "Gris",
+            "plazas": 6,
+            "caracteristicas": [
+                "Cañones de iones",
+                "Escudos",
+                "Hipervelocidad",
+                "Patas extensibles",
+                "Puente de mando"
+            ]
+        }
+    ]
+}

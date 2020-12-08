@@ -5,8 +5,8 @@ var singletonUfosPark =  require("./ufospark/UfosPark.js");
 var singletonReceptivo = require("./receptivo/Receptivo.js");
 const RickMenu = require("./rickmenu/rickmenu.js");
 const crystalJson = require("./data/Crystal.json");
-const rickmenuJson = require("./data/menus.json").España.menu1;
-
+const rickmenuJson = require("./data/RickMenu.json").España.menu1;
+const ufosJson = require("./data/UfosPark.json");
     /**
     * Crea una tarjeta de crédito para Abradolph.
     * Como es una AndromedanExpress
@@ -29,9 +29,10 @@ const rickmenuJson = require("./data/menus.json").España.menu1;
     console.log(abradolph.credit);
 
     let ufosPark = singletonUfosPark.getPark();
-
-    ufosPark.add("unx");
-    ufosPark.add("dox");
+    let ufos = ufosJson;
+    for(let ufo of ufos.ufos) {
+        ufosPark.add(ufo.modelo);
+    }
 
     ufosPark.dispatch(abradolph);
 
@@ -66,7 +67,7 @@ const rickmenuJson = require("./data/menus.json").España.menu1;
 
     console.log("\nAlgun ovni para Morty?\n" + 
     "======================");
-    let morty = new tarjetaCredito("Mort", "0000000000000000");
+    let morty = new tarjetaCredito("Morty", "0000000000000000");
     ufosPark.dispatch(morty);
     console.log("Su credito no ha cambiado: " + morty.credit);
     console.log("No hay ovni Morty: " + ufosPark.getUfoOf(morty.number));
