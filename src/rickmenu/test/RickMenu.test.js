@@ -27,10 +27,10 @@ test('No hay stock', () => {
 });
 
 test('Morty no puede pagar', () => {
-    menu1 = new RickMenu();
-    menu2 = new RickMenu();
-    menu3 = new RickMenu();
-    for (let i = 0; i < 101; i++) {
+    menu1 = new RickMenu(100, 10);
+    menu2 = new RickMenu(100, 10);
+    menu3 = new RickMenu(100, 10);
+    for (let i = 0; i <= 100; i++) {
         menu1.dispatch(morty);
         menu2.dispatch(morty);
         menu3.dispatch(morty);
